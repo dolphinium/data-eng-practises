@@ -1,0 +1,33 @@
+[2024-10-13T15:23:59.007+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-10-13T15:23:58.049900+00:00 [queued]>
+[2024-10-13T15:23:59.010+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-10-13T15:23:58.049900+00:00 [queued]>
+[2024-10-13T15:23:59.011+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2024-10-13T15:23:59.016+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): reddit_extraction> on 2024-10-13 15:23:58.049900+00:00
+[2024-10-13T15:23:59.019+0000] {standard_task_runner.py:57} INFO - Started process 68 to run task
+[2024-10-13T15:23:59.021+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 'reddit_extraction', 'manual__2024-10-13T15:23:58.049900+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmp4zgpnc1s']
+[2024-10-13T15:23:59.026+0000] {standard_task_runner.py:85} INFO - Job 11: Subtask reddit_extraction
+[2024-10-13T15:23:59.049+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-10-13T15:23:58.049900+00:00 [running]> on host f28f66444a85
+[2024-10-13T15:23:59.250+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Yunus Emre KORKMAZ' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='reddit_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-10-13T15:23:58.049900+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-13T15:23:58.049900+00:00'
+[2024-10-13T15:23:59.252+0000] {logging_mixin.py:151} INFO - connected to reddit!
+[2024-10-13T15:24:00.431+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 14, in reddit_pipeline
+    load_data_to_csv(post_df, OUTPUT_PATH)
+  File "/opt/airflow/etls/reddit_etl.py", line 42, in load_data_to_csv
+    data.to_csv(path,index= False)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+IsADirectoryError: [Errno 21] Is a directory: '/opt/airflow/data/output'
+[2024-10-13T15:24:00.442+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=etl_reddit_pipeline, task_id=reddit_extraction, execution_date=20241013T152358, start_date=20241013T152359, end_date=20241013T152400
+[2024-10-13T15:24:00.450+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 11 for task reddit_extraction ([Errno 21] Is a directory: '/opt/airflow/data/output'; 68)
+[2024-10-13T15:24:00.472+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-10-13T15:24:00.484+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

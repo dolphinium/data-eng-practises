@@ -1,0 +1,8 @@
+apache-airflow
+pandas
+numpy
+praw
+configparser
+s3fs
+requests
+beautifulsoup4
