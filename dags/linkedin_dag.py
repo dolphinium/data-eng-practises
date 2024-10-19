@@ -2,14 +2,14 @@ from datetime import datetime
 import os
 import sys
 
-from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow import DAG # type: ignore
+from airflow.operators.python import PythonOperator # type: ignore
 
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pipelines.linkedin_pipeline import linkedin_pipeline
-
+from pipelines.aws_s3_pipeline_linkedin import upload_s3_pipeline
 
 default_args= {
     'owner': 'Yunus Emre KORKMAZ',
@@ -33,10 +33,18 @@ extract = PythonOperator(
     python_callable=linkedin_pipeline,
     op_kwargs={
         'file_name': f'linkedin_{file_postfix}',
-        'config_file':'test'
+        'config_file': 'config.json'
     },
     dag=dag
 )
 
-# upload to s3 part will be done later
+
+# upload to s3
+upload_s3 = PythonOperator(
+    task_id='s3_upload_linkedin',
+    python_callable=upload_s3_pipeline,
+    dag=dag
+)
+
+extract >> upload_s3
 

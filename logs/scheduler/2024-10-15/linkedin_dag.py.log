@@ -5644,3 +5644,101 @@ SyntaxError: invalid syntax
 [2024-10-15T21:01:14.564+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:01:14.563+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2024-10-15T21:01:14.573+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:01:14.573+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
 [2024-10-15T21:01:14.580+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.320 seconds
+[2024-10-15T21:01:44.860+0000] {processor.py:157} INFO - Started process (PID=5923) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:01:44.861+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:01:44.862+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:01:44.862+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:01:45.137+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:01:45.148+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:01:45.147+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:01:45.157+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:01:45.157+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:01:45.164+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.308 seconds
+[2024-10-15T21:02:15.428+0000] {processor.py:157} INFO - Started process (PID=5927) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:02:15.428+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:02:15.429+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:02:15.429+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:02:15.668+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:02:15.678+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:02:15.678+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:02:15.686+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:02:15.686+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:02:15.692+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.268 seconds
+[2024-10-15T21:02:45.927+0000] {processor.py:157} INFO - Started process (PID=5931) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:02:45.928+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:02:45.929+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:02:45.929+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:02:46.167+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:02:46.177+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:02:46.177+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:02:46.185+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:02:46.185+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:02:46.192+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.269 seconds
+[2024-10-15T21:03:16.438+0000] {processor.py:157} INFO - Started process (PID=5935) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:03:16.439+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:03:16.440+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:03:16.440+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:03:16.767+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:03:16.778+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:03:16.778+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:03:16.788+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:03:16.788+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:03:16.796+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.366 seconds
+[2024-10-15T21:03:47.083+0000] {processor.py:157} INFO - Started process (PID=5939) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:03:47.084+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:03:47.085+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:03:47.085+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:03:47.325+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:03:47.335+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:03:47.334+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:03:47.343+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:03:47.343+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:03:47.350+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.271 seconds
+[2024-10-15T21:04:17.620+0000] {processor.py:157} INFO - Started process (PID=5943) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:04:17.622+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:04:17.623+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:04:17.622+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:04:17.873+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:04:17.883+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:04:17.882+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:04:17.891+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:04:17.891+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:04:17.897+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.282 seconds
+[2024-10-15T21:04:48.176+0000] {processor.py:157} INFO - Started process (PID=5947) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:04:48.177+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:04:48.178+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:04:48.178+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:04:48.427+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:04:48.437+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:04:48.437+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:04:48.445+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:04:48.445+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:04:48.451+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.280 seconds
+[2024-10-15T21:05:18.743+0000] {processor.py:157} INFO - Started process (PID=5951) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:05:18.745+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:05:18.746+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:05:18.745+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:05:18.994+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:05:19.003+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:05:19.003+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:05:19.011+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:05:19.011+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:05:19.018+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.280 seconds
+[2024-10-15T21:05:49.232+0000] {processor.py:157} INFO - Started process (PID=5955) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:05:49.233+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:05:49.234+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:05:49.233+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:05:49.493+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:05:49.502+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:05:49.502+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:05:49.510+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:05:49.510+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:05:49.516+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.290 seconds
+[2024-10-15T21:06:19.803+0000] {processor.py:157} INFO - Started process (PID=5959) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:06:19.805+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:06:19.806+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:06:19.806+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:06:20.190+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:06:20.202+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:06:20.202+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:06:20.213+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:06:20.213+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:06:20.220+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.423 seconds
+[2024-10-15T21:06:50.452+0000] {processor.py:157} INFO - Started process (PID=5963) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:06:50.454+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:06:50.456+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:06:50.455+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:06:50.734+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:06:50.745+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:06:50.745+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:06:50.754+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:06:50.754+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:06:50.760+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.313 seconds
+[2024-10-15T21:07:21.008+0000] {processor.py:157} INFO - Started process (PID=5967) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:07:21.009+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:07:21.010+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:07:21.010+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:07:21.370+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:07:21.383+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:07:21.382+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:07:21.393+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:07:21.393+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:07:21.400+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.399 seconds
+[2024-10-15T21:07:51.706+0000] {processor.py:157} INFO - Started process (PID=5971) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:07:51.708+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:07:51.709+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:07:51.708+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:07:51.972+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:07:51.983+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:07:51.983+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:07:51.992+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:07:51.992+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:07:51.999+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.299 seconds
+[2024-10-15T21:08:22.268+0000] {processor.py:157} INFO - Started process (PID=5975) to work on /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:08:22.269+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/linkedin_dag.py for tasks to queue
+[2024-10-15T21:08:22.270+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:08:22.270+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:08:22.524+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_linkedin_pipeline']) retrieved from /opt/airflow/dags/linkedin_dag.py
+[2024-10-15T21:08:22.533+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:08:22.533+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-10-15T21:08:22.541+0000] {logging_mixin.py:151} INFO - [2024-10-15T21:08:22.541+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_linkedin_pipeline to 2024-10-14T00:00:00+00:00, run_after=2024-10-15T00:00:00+00:00
+[2024-10-15T21:08:22.548+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/linkedin_dag.py took 0.285 seconds

@@ -1,0 +1,25 @@
+[2024-10-19T20:05:36.511+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_linkedin_pipeline.linkedin_extraction manual__2024-10-19T20:05:34.870251+00:00 [queued]>
+[2024-10-19T20:05:36.515+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_linkedin_pipeline.linkedin_extraction manual__2024-10-19T20:05:34.870251+00:00 [queued]>
+[2024-10-19T20:05:36.516+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2024-10-19T20:05:36.521+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): linkedin_extraction> on 2024-10-19 20:05:34.870251+00:00
+[2024-10-19T20:05:36.524+0000] {standard_task_runner.py:57} INFO - Started process 56 to run task
+[2024-10-19T20:05:36.530+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_linkedin_pipeline', 'linkedin_extraction', 'manual__2024-10-19T20:05:34.870251+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/linkedin_dag.py', '--cfg-path', '/tmp/tmph6b48220']
+[2024-10-19T20:05:36.532+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask linkedin_extraction
+[2024-10-19T20:05:36.558+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_linkedin_pipeline.linkedin_extraction manual__2024-10-19T20:05:34.870251+00:00 [running]> on host b05e8c546023
+[2024-10-19T20:05:36.589+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Yunus Emre KORKMAZ' AIRFLOW_CTX_DAG_ID='etl_linkedin_pipeline' AIRFLOW_CTX_TASK_ID='linkedin_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-10-19T20:05:34.870251+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-19T20:05:34.870251+00:00'
+[2024-10-19T20:05:36.590+0000] {logging_mixin.py:151} INFO - config/config.json
+[2024-10-19T20:05:36.591+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/pipelines/linkedin_pipeline.py", line 8, in linkedin_pipeline
+    jobs_list = extract_jobs(config_file) # manage config file
+  File "/opt/airflow/etls/linkedin_etl.py", line 28, in extract_jobs
+    all_jobs = get_jobcards()
+TypeError: get_jobcards() missing 1 required positional argument: 'config'
+[2024-10-19T20:05:36.595+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=etl_linkedin_pipeline, task_id=linkedin_extraction, execution_date=20241019T200534, start_date=20241019T200536, end_date=20241019T200536
+[2024-10-19T20:05:36.599+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 4 for task linkedin_extraction (get_jobcards() missing 1 required positional argument: 'config'; 56)
+[2024-10-19T20:05:36.633+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-10-19T20:05:36.640+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,59 @@
+[2024-10-19T20:37:05.113+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_linkedin_pipeline.linkedin_extraction manual__2024-10-19T20:37:03.655098+00:00 [queued]>
+[2024-10-19T20:37:05.116+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_linkedin_pipeline.linkedin_extraction manual__2024-10-19T20:37:03.655098+00:00 [queued]>
+[2024-10-19T20:37:05.117+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2024-10-19T20:37:05.122+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): linkedin_extraction> on 2024-10-19 20:37:03.655098+00:00
+[2024-10-19T20:37:05.125+0000] {standard_task_runner.py:57} INFO - Started process 62 to run task
+[2024-10-19T20:37:05.127+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_linkedin_pipeline', 'linkedin_extraction', 'manual__2024-10-19T20:37:03.655098+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/linkedin_dag.py', '--cfg-path', '/tmp/tmp26wdgpgx']
+[2024-10-19T20:37:05.129+0000] {standard_task_runner.py:85} INFO - Job 6: Subtask linkedin_extraction
+[2024-10-19T20:37:05.157+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_linkedin_pipeline.linkedin_extraction manual__2024-10-19T20:37:03.655098+00:00 [running]> on host b05e8c546023
+[2024-10-19T20:37:05.192+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Yunus Emre KORKMAZ' AIRFLOW_CTX_DAG_ID='etl_linkedin_pipeline' AIRFLOW_CTX_TASK_ID='linkedin_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-10-19T20:37:03.655098+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-19T20:37:03.655098+00:00'
+[2024-10-19T20:37:05.193+0000] {logging_mixin.py:151} INFO - config/config.json
+[2024-10-19T20:37:06.092+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=0
+[2024-10-19T20:37:06.428+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=25
+[2024-10-19T20:37:06.830+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=50
+[2024-10-19T20:37:07.247+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=75
+[2024-10-19T20:37:07.598+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=100
+[2024-10-19T20:37:08.270+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=125
+[2024-10-19T20:37:08.689+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=150
+[2024-10-19T20:37:09.017+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=175
+[2024-10-19T20:37:09.629+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=200
+[2024-10-19T20:37:10.312+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=Los%20Angeles&f_TPR=&f_WT=&geoId=&f_TPR=r84600&start=225
+[2024-10-19T20:37:10.696+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=0
+[2024-10-19T20:37:11.442+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=25
+[2024-10-19T20:37:11.818+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=50
+[2024-10-19T20:37:12.729+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=75
+[2024-10-19T20:37:13.074+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=100
+[2024-10-19T20:37:13.469+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=125
+[2024-10-19T20:37:13.841+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=150
+[2024-10-19T20:37:14.302+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=175
+[2024-10-19T20:37:14.919+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=200
+[2024-10-19T20:37:15.780+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&location=USA&f_TPR=&f_WT=2&geoId=&f_TPR=r84600&start=225
+[2024-10-19T20:37:15.781+0000] {logging_mixin.py:151} INFO - Total job cards scraped:  30
+[2024-10-19T20:37:15.781+0000] {logging_mixin.py:151} INFO - Total job cards after removing duplicates:  22
+[2024-10-19T20:37:15.782+0000] {logging_mixin.py:151} INFO - Total job cards after removing irrelevant jobs:  20
+[2024-10-19T20:37:15.783+0000] {logging_mixin.py:151} INFO - Found new job:  AWS Cloud Engineer at  Motion Recruitment https://www.linkedin.com/jobs/view/4037023306/
+[2024-10-19T20:37:16.194+0000] {logging_mixin.py:151} INFO - Found new job:  Applications Dev & Test - Web Developer 4 at  OSI Engineering https://www.linkedin.com/jobs/view/4053531449/
+[2024-10-19T20:37:16.541+0000] {logging_mixin.py:151} INFO - Found new job:  Back End Engineer - $120-$160k (Python/Django) at  CyberCoders https://www.linkedin.com/jobs/view/4002409015/
+[2024-10-19T20:37:16.940+0000] {logging_mixin.py:151} INFO - Found new job:  Backend Engineer at  AArete https://www.linkedin.com/jobs/view/4052287428/
+[2024-10-19T20:37:17.338+0000] {logging_mixin.py:151} INFO - Found new job:  Backend Engineer III - Cloud (Remote) at  CrowdStrike https://www.linkedin.com/jobs/view/4052609107/
+[2024-10-19T20:37:17.680+0000] {logging_mixin.py:151} INFO - Found new job:  Backend Engineer, Seller Systems at  Stripe https://www.linkedin.com/jobs/view/4037002017/
+[2024-10-19T20:37:18.012+0000] {logging_mixin.py:151} INFO - Found new job:  Java/Full-stack developer   Remote at  SynergisticIT https://www.linkedin.com/jobs/view/4052600752/
+[2024-10-19T20:37:18.347+0000] {logging_mixin.py:151} INFO - Found new job:  Lead Software Engineer - Full-Stack with Back-End Focus (Remote) at  Ansys https://www.linkedin.com/jobs/view/4037036628/
+[2024-10-19T20:37:19.363+0000] {logging_mixin.py:151} INFO - Found new job:  Remote DevOps Developer (Python/Ansible) - $130K at  Confidential https://www.linkedin.com/jobs/view/3988715668/
+[2024-10-19T20:37:20.262+0000] {logging_mixin.py:151} INFO - Found new job:  Senior / Staff Full Stack Software Engineer, Clinical Data at  insitro https://www.linkedin.com/jobs/view/3984661656/
+[2024-10-19T20:37:20.623+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Backend Engineer, Subscription & Payments at  Webflow https://www.linkedin.com/jobs/view/4019032221/
+[2024-10-19T20:37:20.944+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Backend Software Engineer - Python at  CyberCoders https://www.linkedin.com/jobs/view/4053878131/
+[2024-10-19T20:37:21.995+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Backend Software Engineer - Server Access at  Teleport https://www.linkedin.com/jobs/view/3999628343/
+[2024-10-19T20:37:23.177+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Backend Software Engineer - Teleport Policy at  Teleport https://www.linkedin.com/jobs/view/3999628353/
+[2024-10-19T20:37:24.523+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Front End Developer at  Jobot Consulting https://www.linkedin.com/jobs/view/4052668350/
+[2024-10-19T20:37:24.950+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Full Stack Developer at  RIT Solutions, Inc. https://www.linkedin.com/jobs/view/4054874272/
+[2024-10-19T20:37:25.526+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Full-Stack Software Engineer - Python/React at  CyberCoders https://www.linkedin.com/jobs/view/4053878112/
+[2024-10-19T20:37:25.884+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Web Developer/Designer at  REE Medical https://www.linkedin.com/jobs/view/4054233224/
+[2024-10-19T20:37:27.210+0000] {logging_mixin.py:151} INFO - Found new job:  Staff Backend Software Engineer - Cloud Platform at  Teleport https://www.linkedin.com/jobs/view/3999629210/
+[2024-10-19T20:37:28.307+0000] {logging_mixin.py:151} INFO - Found new job:  Web Developer at  Jobs via Dice https://www.linkedin.com/jobs/view/4054059660/
+[2024-10-19T20:37:28.634+0000] {logging_mixin.py:151} INFO - Total jobs to add:  20
+[2024-10-19T20:37:28.634+0000] {logging_mixin.py:151} INFO - 'FILTERED' Total jobs to add:  0
+[2024-10-19T20:37:28.643+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-10-19T20:37:28.651+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=etl_linkedin_pipeline, task_id=linkedin_extraction, execution_date=20241019T203703, start_date=20241019T203705, end_date=20241019T203728
+[2024-10-19T20:37:28.693+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-10-19T20:37:28.701+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

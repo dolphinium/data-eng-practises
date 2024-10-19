@@ -8,37 +8,43 @@ from urllib.parse import quote
 from itertools import groupby
 from datetime import datetime, timedelta, time
 import json
-
+import os
 
 
 def load_config(file_name):
     # Load the config file
-    with open(file_name) as f:
+    # os_path = /opt/airflow/
+    # target_path = /opt/airflow/config/config.json
+    # add this path to os_path= config/config.json
+    config_path = os.path.join('config/config.json')
+    print(config_path)
+    with open(config_path) as f:
         return json.load(f)
 
 
 def extract_jobs(config_file):
     job_list = []
-    all_jobs = get_jobcards()
     config = load_config(config_file)
+    all_jobs = get_jobcards(config)
     if len(all_jobs) > 0:
 
         for job in all_jobs:
             job_date = convert_date_format(job['date'])
             job_date = datetime.combine(job_date, time())
-            #if job is older than a week, skip it
+            #if job is older than days to scrape, skip it
             if job_date < datetime.now() - timedelta(days=config['days_to_scrape']):
                 continue
             print('Found new job: ', job['title'], 'at ', job['company'], job['job_url'])
             desc_soup = get_with_retry(job['job_url'], config)
             job['job_description'] = transform_job(desc_soup)
             job_list.append(job)
-        #Final check - removing jobs based on job description keywords words from the config file
+        # Final check - removing jobs based on job description keywords words from the config file
         jobs_to_add = remove_irrelevant_jobs(job_list, config)
         print ("Total jobs to add: ", len(jobs_to_add))
         #Create a list for jobs removed based on job description keywords - they will be added to the filtered_jobs table
         filtered_list = [job for job in job_list if job not in jobs_to_add]
-        return filtered_list
+        print ("'FILTERED' Total jobs to add: ", len(filtered_list))
+        return jobs_to_add
     else:
         print("No jobs found")
     
@@ -51,7 +57,7 @@ def get_jobcards(config):
             keywords = quote(query['keywords']) # URL encode the keywords
             location = quote(query['location']) # URL encode the location
             for i in range (0, config['pages_to_scrape']):
-                url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={keywords}&location={location}&f_TPR=&f_WT={query['f_WT']}&geoId=&f_TPR={config['timespan']}&start={25*i}"
+                url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={keywords}&f_TPR=&f_WT={query['f_WT']}&geoId={config['geoId']}&start={25*i}"
                 soup = get_with_retry(url, config)
                 jobs = transform(soup)
                 all_jobs = all_jobs + jobs

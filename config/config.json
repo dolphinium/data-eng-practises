@@ -1,0 +1,39 @@
+{
+    "proxies": {
+    
+},
+    "headers": {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+},
+  
+    "OpenAI_API_KEY": "",
+    "OpenAI_Model": "",
+    "resume_path": "resume/yunus_emre_korkmaz_cv.pdf",
+  
+    "search_queries": [    
+      {"keywords": "Python developer", "location": "Türkiye", "f_WT": ""},
+      {"keywords": "Data Engineer", "location": "Türkiye", "f_WT": ""},
+      {"keywords": "ML Engineer", "location": "Türkiye", "f_WT": ""},
+      {"keywords": "AI Engineer", "location": "Türkiye", "f_WT": ""},
+      {"keywords": "Deep Learning Engineer", "location": "Türkiye", "f_WT": ""}
+    ],
+    "desc_words": [
+      "agriculture", "farm", "food safety", "manufacture", "manufacturing", "Bilingual", "chemistry", "FDA", "ICH Guideline", "21 CFR 210",
+      "biological sciences", "clinical research", "clinical trials", "drug safety", "ISO 9001", "ISO9001", "Life Sciences", "Biotech", "safety standards", "gt.school", "degree in accounting", "degree in Finance", "ISQM", "ISQM1",
+      "QA/QC", "Electrical Engineering", "IS09001"
+    ],
+    "title_exclude": ["frontend", "fron end", "game"],
+    "title_include": ["python", "developer", "backend", "BE", "engineer"],
+    "company_exclude": ["ClickJobs.io"],
+    "languages": ["en"],
+    "timespan": "r84600",
+    "geoId": "102424322",
+    "jobs_tablename": "jobs",
+    "filtered_jobs_tablename": "filtered_jobs",
+    "db_path": "./data/my_database.db",
+    "pages_to_scrape": 5,
+    "rounds": 1,
+    "days_to_scrape": 7,
+    "app_table": "jobs"
+    }
+    
