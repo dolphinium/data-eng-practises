@@ -1,0 +1,75 @@
+[2024-10-20T20:27:15.131+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_linkedin_pipeline.linkedin_extraction scheduled__2024-10-19T00:00:00+00:00 [queued]>
+[2024-10-20T20:27:15.135+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_linkedin_pipeline.linkedin_extraction scheduled__2024-10-19T00:00:00+00:00 [queued]>
+[2024-10-20T20:27:15.135+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2024-10-20T20:27:15.142+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): linkedin_extraction> on 2024-10-19 00:00:00+00:00
+[2024-10-20T20:27:15.145+0000] {standard_task_runner.py:57} INFO - Started process 50 to run task
+[2024-10-20T20:27:15.147+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_linkedin_pipeline', 'linkedin_extraction', 'scheduled__2024-10-19T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/linkedin_dag.py', '--cfg-path', '/tmp/tmpzkes0yid']
+[2024-10-20T20:27:15.149+0000] {standard_task_runner.py:85} INFO - Job 2: Subtask linkedin_extraction
+[2024-10-20T20:27:15.186+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_linkedin_pipeline.linkedin_extraction scheduled__2024-10-19T00:00:00+00:00 [running]> on host 8f03c85093c9
+[2024-10-20T20:27:15.232+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Yunus Emre KORKMAZ' AIRFLOW_CTX_DAG_ID='etl_linkedin_pipeline' AIRFLOW_CTX_TASK_ID='linkedin_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-10-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-19T00:00:00+00:00'
+[2024-10-20T20:27:15.234+0000] {logging_mixin.py:151} INFO - config/config.json
+[2024-10-20T20:27:15.921+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&f_TPR=&f_WT=&geoId=102424322&start=0
+[2024-10-20T20:27:16.583+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&f_TPR=&f_WT=&geoId=102424322&start=25
+[2024-10-20T20:27:16.887+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&f_TPR=&f_WT=&geoId=102424322&start=50
+[2024-10-20T20:27:17.203+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&f_TPR=&f_WT=&geoId=102424322&start=75
+[2024-10-20T20:27:17.712+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python%20developer&f_TPR=&f_WT=&geoId=102424322&start=100
+[2024-10-20T20:27:18.473+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Data%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=0
+[2024-10-20T20:27:19.122+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Data%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=25
+[2024-10-20T20:27:19.813+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Data%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=50
+[2024-10-20T20:27:20.430+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Data%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=75
+[2024-10-20T20:27:21.181+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Data%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=100
+[2024-10-20T20:27:21.959+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=ML%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=0
+[2024-10-20T20:27:22.473+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=ML%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=25
+[2024-10-20T20:27:23.011+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=ML%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=50
+[2024-10-20T20:27:23.655+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=ML%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=75
+[2024-10-20T20:27:24.153+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=ML%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=100
+[2024-10-20T20:27:24.786+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=AI%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=0
+[2024-10-20T20:27:25.382+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=AI%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=25
+[2024-10-20T20:27:26.067+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=AI%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=50
+[2024-10-20T20:27:26.622+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=AI%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=75
+[2024-10-20T20:27:27.142+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=AI%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=100
+[2024-10-20T20:27:27.906+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Deep%20Learning%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=0
+[2024-10-20T20:27:28.631+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Deep%20Learning%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=25
+[2024-10-20T20:27:29.136+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Deep%20Learning%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=50
+[2024-10-20T20:27:29.728+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Deep%20Learning%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=75
+[2024-10-20T20:27:30.238+0000] {logging_mixin.py:151} INFO - Finished scraping page:  https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Deep%20Learning%20Engineer&f_TPR=&f_WT=&geoId=102424322&start=100
+[2024-10-20T20:27:30.240+0000] {logging_mixin.py:151} INFO - Total job cards scraped:  122
+[2024-10-20T20:27:30.240+0000] {logging_mixin.py:151} INFO - Total job cards after removing duplicates:  100
+[2024-10-20T20:27:30.242+0000] {logging_mixin.py:151} INFO - Total job cards after removing irrelevant jobs:  91
+[2024-10-20T20:27:30.243+0000] {logging_mixin.py:151} INFO - Found new job:  AI Engineer at  Coral https://www.linkedin.com/jobs/view/4055423707/
+[2024-10-20T20:27:31.198+0000] {logging_mixin.py:151} INFO - Found new job:  Analytics Engineer (İstanbul-Ankara-İzmir) at  Trendyol Group https://www.linkedin.com/jobs/view/4030130018/
+[2024-10-20T20:27:32.243+0000] {logging_mixin.py:151} INFO - Found new job:  Associate Data Engineer at  Metyis https://www.linkedin.com/jobs/view/3962786864/
+[2024-10-20T20:27:33.081+0000] {logging_mixin.py:151} INFO - Found new job:  Back-end Developer at  DogGO https://www.linkedin.com/jobs/view/4054886566/
+[2024-10-20T20:27:34.259+0000] {logging_mixin.py:151} INFO - Found new job:  Data Analist at  DogGO https://www.linkedin.com/jobs/view/4054884693/
+[2024-10-20T20:27:35.082+0000] {logging_mixin.py:151} INFO - Found new job:  Data Analysis Intern at  Revival https://www.linkedin.com/jobs/view/4051803805/
+[2024-10-20T20:27:35.860+0000] {logging_mixin.py:151} INFO - Found new job:  Data Analyst at  Codeway https://www.linkedin.com/jobs/view/4010474416/
+[2024-10-20T20:27:36.703+0000] {logging_mixin.py:151} INFO - Found new job:  Data Engineer at  Sabanci University https://www.linkedin.com/jobs/view/4047645473/
+[2024-10-20T20:27:37.549+0000] {logging_mixin.py:151} INFO - Found new job:  Data Engineer (İstanbul-Ankara-İzmir) at  Trendyol Group https://www.linkedin.com/jobs/view/4030125589/
+[2024-10-20T20:27:38.523+0000] {logging_mixin.py:151} INFO - Found new job:  Data Scientist at  Fugo Games https://www.linkedin.com/jobs/view/3980170782/
+[2024-10-20T20:27:39.289+0000] {logging_mixin.py:151} INFO - Found new job:  Data Scientist at  Midas Games https://www.linkedin.com/jobs/view/4048404321/
+[2024-10-20T20:27:40.141+0000] {logging_mixin.py:151} INFO - Found new job:  Database Management Master System Engineer(Hybrid) at  Intertech Information Technology and Marketing Inc. https://www.linkedin.com/jobs/view/4047819541/
+[2024-10-20T20:27:41.066+0000] {logging_mixin.py:151} INFO - Found new job:  EY Türkiye - MLOps Engineer Senior or Manager at  EY https://www.linkedin.com/jobs/view/3999070741/
+[2024-10-20T20:27:41.351+0000] {logging_mixin.py:151} INFO - Found new job:  Full Stack Software Engineer 'Web Platforms and Innovation Application Development' at  Yapı Kredi Teknoloji https://www.linkedin.com/jobs/view/4048046706/
+[2024-10-20T20:27:42.132+0000] {logging_mixin.py:151} INFO - Found new job:  Full-Stack Developer at  Siemens https://www.linkedin.com/jobs/view/4053345428/
+[2024-10-20T20:27:43.070+0000] {logging_mixin.py:151} INFO - Found new job:  Fullstack Developer at  Codeway https://www.linkedin.com/jobs/view/3987023042/
+[2024-10-20T20:27:44.008+0000] {logging_mixin.py:151} INFO - Found new job:  Generative AI R&D Engineer at  ICterra Information and Communication Technologies https://www.linkedin.com/jobs/view/4047804994/
+[2024-10-20T20:27:45.014+0000] {logging_mixin.py:151} INFO - Found new job:  R&D Software Engineer at  Mutlu Akü https://www.linkedin.com/jobs/view/4052029794/
+[2024-10-20T20:27:46.048+0000] {logging_mixin.py:151} INFO - Found new job:  Research And Development Engineer 'Applied Data Science' at  Yapı Kredi Teknoloji https://www.linkedin.com/jobs/view/4051472117/
+[2024-10-20T20:27:46.547+0000] {logging_mixin.py:151} INFO - Found new job:  Research and Development Engineer 'AI' at  Yapı Kredi Teknoloji https://www.linkedin.com/jobs/view/4050236858/
+[2024-10-20T20:27:47.317+0000] {logging_mixin.py:151} INFO - Found new job:  Senior AI-Enhanced BMS Engineer at  BlackTeal Energy https://www.linkedin.com/jobs/view/4052182322/
+[2024-10-20T20:27:48.167+0000] {logging_mixin.py:151} INFO - Found new job:  Senior Data Engineer at  HangiKredi https://www.linkedin.com/jobs/view/4047627783/
+[2024-10-20T20:27:48.490+0000] {logging_mixin.py:151} INFO - Found new job:  Senior ML Engineer at  KoçDigital https://www.linkedin.com/jobs/view/4050283474/
+[2024-10-20T20:27:49.774+0000] {logging_mixin.py:151} INFO - Found new job:  Senior NLP/Machine Learning Engineer at  Orion Innovation Turkey https://www.linkedin.com/jobs/view/4050933769/
+[2024-10-20T20:27:50.757+0000] {logging_mixin.py:151} INFO - Found new job:  Senior System Engineer - Sanallaştırma, Veri ve Backup Yönetimi at  DESistem Bilgi Teknolojileri A.Ş. https://www.linkedin.com/jobs/view/4051831870/
+[2024-10-20T20:27:51.782+0000] {logging_mixin.py:151} INFO - Found new job:  Site Reliability Engineer at  Kafein Technology Solutions https://www.linkedin.com/jobs/view/4040815654/
+[2024-10-20T20:27:52.708+0000] {logging_mixin.py:151} INFO - Found new job:  Software Engineer 'Generative AI' at  Yapı Kredi Teknoloji https://www.linkedin.com/jobs/view/4048015954/
+[2024-10-20T20:27:53.613+0000] {logging_mixin.py:151} INFO - Found new job:  Software Engineering Manager 'Call Center Application Development' at  Yapı Kredi Teknoloji https://www.linkedin.com/jobs/view/4049159874/
+[2024-10-20T20:27:54.427+0000] {logging_mixin.py:151} INFO - Found new job:  Software Integration Engineer at  AREAL https://www.linkedin.com/jobs/view/4054164348/
+[2024-10-20T20:27:55.460+0000] {logging_mixin.py:151} INFO - Found new job:  Software Test Automation Engineer at  TesterYou https://www.linkedin.com/jobs/view/4053327736/
+[2024-10-20T20:27:56.713+0000] {logging_mixin.py:151} INFO - Found new job:  Software Test Engineer at  Akkodis https://www.linkedin.com/jobs/view/4049523205/
+[2024-10-20T20:27:57.851+0000] {logging_mixin.py:151} INFO - Total jobs to add:  28
+[2024-10-20T20:27:57.852+0000] {logging_mixin.py:151} INFO - 'FILTERED' Total jobs to add:  3
+[2024-10-20T20:27:57.863+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-10-20T20:27:57.867+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=etl_linkedin_pipeline, task_id=linkedin_extraction, execution_date=20241019T000000, start_date=20241020T202715, end_date=20241020T202757
+[2024-10-20T20:27:57.919+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-10-20T20:27:57.928+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

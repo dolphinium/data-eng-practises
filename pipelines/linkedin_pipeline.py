@@ -12,3 +12,5 @@ def linkedin_pipeline(file_name: str, config_file= 'config.json'):
     # load to csv
     file_path = f'{OUTPUT_PATH}/{file_name}.csv'
     load_data_to_csv(jobs_df, file_path)
+    
+    return file_path

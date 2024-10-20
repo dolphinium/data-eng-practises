@@ -23,7 +23,7 @@
       "QA/QC", "Electrical Engineering", "IS09001"
     ],
     "title_exclude": ["frontend", "fron end", "game"],
-    "title_include": ["python", "developer", "backend", "BE", "engineer"],
+    "title_include": ["python", "developer", "backend", "BE", "engineer", "software", "AI","ML", "Data", "Science"],
     "company_exclude": ["ClickJobs.io"],
     "languages": ["en"],
     "timespan": "r84600",

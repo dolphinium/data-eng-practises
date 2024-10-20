@@ -35,6 +35,7 @@ extract = PythonOperator(
         'file_name': f'linkedin_{file_postfix}',
         'config_file': 'config.json'
     },
+    provide_context=True,
     dag=dag
 )
 
